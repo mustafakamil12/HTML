@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD Operations</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="crud.js"></script>
+  </head>
+  <body>
+    <h1>CRUD Operations</h1>
+    <table id="data-table">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+    <br>
+    <button id="create-button">Create</button>
+    <br><br>
+    <div id="form-div" style="display:none;">
+      <form id="data-form">
+        <input type="hidden" id="id-input" name="id">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" name="name" required>
+        <br><br>
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" name="email" required>
+        <br><br>
+        <button id="submit-button">Submit</button>
+        <button id="cancel-button">Cancel</button>
+      </form>
+    </div>
+  </body>
+</html>
